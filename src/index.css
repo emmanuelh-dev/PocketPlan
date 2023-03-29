@@ -235,11 +235,18 @@ header h1 {
 main {
   padding-top: 10rem;
 }
-
-.filtros .campo {
+@media (min-width: 768px) {
+  .filtros .campo {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+.filtros .campo{
   display: flex;
   align-items: center;
-  gap: 2rem;
+justify-content: center;
+  flex-direction: column;
 }
 .filtros label {
   font-size: 3rem;
